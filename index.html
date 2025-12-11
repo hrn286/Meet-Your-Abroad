@@ -72,8 +72,33 @@
   <h2>記事応募フォーム</h2>
 </section>
 
-<section id="AIshindan">
+<section id="ai-section" style="padding:80px 20px; text-align:center;">
   <h2>AI無料診断</h2>
+  <p>ボタンをクリックすると、AIがあなたの留学タイプを診断します。</p>
+
+  <!-- ここが「AI無料診断」って書かれたボタン -->
+  <button id="start-ai" style="padding:10px 20px; font-size:16px; cursor:pointer;">
+    AI無料診断を開始する
+  </button>
+
+  <!-- 最初は非表示にしておくチャットエリア -->
+  <div id="chat-area" style="display:none; margin-top:30px;">
+      <div id="chat" style="
+          border:1px solid #ccc;
+          padding:10px;
+          height:400px;
+          overflow-y:scroll;
+          max-width:600px;
+          margin:0 auto;
+          text-align:left;
+      "></div>
+
+      <div style="max-width:600px; margin:20px auto; display:flex; gap:8px;">
+        <input id="input" type="text" placeholder="ここに入力してね" 
+               style="flex:1; padding:8px;">
+        <button onclick="send()" style="padding:8px 16px;">送信</button>
+      </div>
+  </div>
 </section>
 
 <section id="contact">
