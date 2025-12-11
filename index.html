@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Your Abroad</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="fixed-header">
+  <div class="header-left">
+    <img src="images/aicon.png" alt="ロゴ" class="header-logo">
+  </div>
+
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="#taikendan">体験談一覧</a></li>
+      <li><a href="#AIshindan">AI無料診断</a></li>
+      <li><a href="#form">記事応募フォーム</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#about">ABOUT</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <section class="hero">
+
+    <!-- 上に置くメニュー -->
+    <nav class="hero-menu">
+  <ul class="nav-menu">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="#taikendan">体験談一覧</a></li>
+    <li><a href="#AIshindan">AI無料診断</a></li>
+    <li><a href="#form">記事応募フォーム</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+    <li><a href="#about">ABOUT</a></li>
+  </ul>
+</nav>
+
+
+    <!-- 真ん中のロゴ -->
+    <img src="images/aicon.png" alt="ロゴ" class="hero-logo">
+
+    <!-- ロゴ下のキャッチコピー -->
+    <h1 class="hero-copy">ここにキャッチコピーを入れる</h1>
+
+  </section>
+
+  <section class="intro">
+    <h2>Meet Your Abroad とは？</h2>
+    <p>
+      ここにサービスの簡単な説明文を入れます。<br>
+      WordPressサイトの本文をコピペしていけばOKです。
+    </p>
+  </section>
+
+  <!-- 3つの特徴セクション -->
+  <section class="features">
+    <div class="feature">
+      <h3>特徴１</h3>
+      <p>ここに特徴１の説明を入れます。</p>
+    </div>
+    <div class="feature">
+      <h3>特徴２</h3>
+      <p>ここに特徴２の説明を入れます。</p>
+    </div>
+    <div class="feature">
+      <h3>特徴３</h3>
+      <p>ここに特徴３の説明を入れます。</p>
+    </div>
+  </section>
+
+<!--メニューからスクロールで飛ぶやつ -->
+
+<section id="taikendan">
+  <h2>体験談一覧</h2>
+</section>
+
+<section id="form">
+  <h2>記事応募フォーム</h2>
+</section>
+
+<section id="AIshindan">
+  <h2>AI無料診断</h2>
+</section>
+
+<section id="contact">
+  <h2>CONTACT</h2>
+</section>
+
+<section id="about">
+  <h2>ABOUT</h2>
+</section>
+
+
+  <!-- フッター -->
+<footer class="site-footer">
+  <div class="footer-left">
+    <p>© 2025 Meet Your Abroad</p>
+  </div>
+
+  <div class="footer-right">
+    <img src="images/aicon.png" alt="Meet Your Abroad logo">
+  </div>
+</footer>
+
+
+<script>
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector(".fixed-header");
+    const heroLogo = document.querySelector(".hero-logo");
+
+    if (window.scrollY > 80) {
+      header.style.display = "flex";
+      heroLogo.style.opacity = "0";  
+      heroLogo.style.pointerEvents = "none";
+    } else {
+      header.style.display = "none";
+      heroLogo.style.opacity = "1";
+      heroLogo.style.pointerEvents = "auto";
+    }
+  });
+</script>
+
+</body>
+</html>

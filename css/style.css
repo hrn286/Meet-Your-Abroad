@@ -1,0 +1,217 @@
+/* =====================
+  全体のリセット
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+
+
+/* =====================
+  スクロール後の固定ヘッダー
+===================== */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;              
+  padding: 0 20px;
+  background: #f7f7f7;       
+  border-bottom: 1px solid #eee;
+  display: none;             
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+/* 左上の小さいロゴ（スクロール後ヘッダー用） */
+.header-logo {
+  height: 40px;
+  display: block;
+}
+
+
+
+/* =====================
+  HERO セクション
+===================== */
+.hero {
+  padding: 0;
+}
+
+/* 上に置いているメニューの背景帯 */
+.hero-menu {
+  background-color: #f7f7f7;
+  padding: 40px 0 40px 0;
+  width: 100%;
+  position: relative;
+  z-index: 1000; 
+}
+
+
+
+
+/* =====================
+  共通メニュー（HEROの中 & 固定ヘッダー両方で使う）
+===================== */
+
+/* 両方のメニューの <ul> を共通スタイルにする */
+.hero-menu ul,
+.fixed-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO側のメニューは真ん中寄せ */
+.hero-menu ul {
+  justify-content: center;
+}
+
+/* 固定ヘッダー側のメニューは右寄せ */
+.fixed-header nav ul {
+  justify-content: flex-end;
+}
+
+/* メニュー内のリンク共通スタイル */
+.hero-menu ul li a,
+.fixed-header nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* hover時に下線がスッと出るアニメーション */
+.hero-menu ul li a::after,
+.fixed-header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+.hero-menu ul li a:hover::after,
+.fixed-header nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+
+/* =====================
+  中央のロゴ & キャッチコピー
+===================== */
+
+/* HERO中央の大きなロゴ */
+.hero-logo {
+  height: 300px;         /* 好みで調整OK */
+  margin: 20px auto;
+  display: block;
+}
+
+/* ロゴの下のキャッチコピー */
+.hero-copy {
+  font-size: 20px;       /* 三周り小さめくらいのサイズ感 */
+  font-weight: 500;
+  margin-top: 10px;
+  color: #333;
+}
+
+
+
+/* =====================
+  下のコンテンツ部分
+===================== */
+
+/* サイトの説明セクション */
+.intro {
+  padding: 60px 20px;
+}
+
+.intro h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* 3つの特徴セクション */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px 80px;
+}
+
+.feature {
+  width: 260px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #01B4ED;
+}
+
+/* フッター */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  font-size: 14px;
+}
+.site-footer {
+  display: flex;
+  justify-content: space-between; /* 左右に配置 */
+  align-items: center;
+  padding: 20px 40px;
+  background: #333;
+  color: #fff;
+}
+
+/* 左側テキスト */
+.footer-left p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* 右側ロゴ */
+.footer-right img {
+  width: 60px;   /* ここでサイズ調整！ */
+  height: auto;
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
