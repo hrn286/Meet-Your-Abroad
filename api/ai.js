@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const apiKey = process.env.OPENAI_API_KEY; // Vercel の環境変数
+  const apiKey = process.env.OPENAI_API_KEY; // ← Vercel の環境変数
   const { messages } = req.body;
 
   try {
@@ -21,7 +21,9 @@ export default async function handler(req, res) {
 
     const data = await response.json();
 
-    const reply = data.choices?.[0]?.message?.content || "すみません、うまく返答できませんでした。";
+    const reply =
+      data.choices?.[0]?.message?.content ||
+      "すみません、うまく返答できませんでした。";
 
     return res.status(200).json({ reply });
   } catch (err) {
