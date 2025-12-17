@@ -9,7 +9,7 @@ export default async function handler(req, res) {
         "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
       },
       body: JSON.stringify({
-        model: "gpt-4.1-mini",
+        model: "gpt-3.5-turbo",
         messages: [
           {
             role: "system",
@@ -29,17 +29,24 @@ ${answers.map((a, i) => `${i + 1}. ${a}`).join("\n")}
 
     const data = await response.json();
 
-    // 👇 ここは超シンプル
-    const resultText = data.choices?.[0]?.message?.content;
+    // 👇 ここで失敗理由も見える
+    if (!data.choices) {
+      console.error("OpenAI error response:", data);
+      return res.status(500).json({
+        result: "OpenAIからエラーが返ってきました。APIキーやモデルを確認してね🙏"
+      });
+    }
+
+    const resultText = data.choices[0].message.content;
 
     res.status(200).json({
-      result: resultText || "診断はできましたが、文章の取得に失敗しました🙏"
+      result: resultText
     });
 
   } catch (error) {
-    console.error(error);
+    console.error("Server error:", error);
     res.status(500).json({
-      result: "ごめん、AI診断でエラーが起きた😭 もう一回試してね"
+      result: "サーバー側でエラーが起きました😭"
     });
   }
 }
