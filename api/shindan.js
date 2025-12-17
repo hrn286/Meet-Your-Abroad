@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   try {
     const { answers } = req.body;
 
-    const response = await fetch("https://api.openai.com/v1/responses", {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -10,45 +10,36 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: "gpt-4.1-mini",
-        input: `
-あなたは留学カウンセラーです。
-以下の回答をもとに、初心者にも分かりやすく
-日本語で留学タイプを診断してください。
+        messages: [
+          {
+            role: "system",
+            content: "あなたは優秀な留学カウンセラーです。初心者にも分かりやすく診断してください。"
+          },
+          {
+            role: "user",
+            content: `
+以下の回答をもとに、向いている留学タイプを診断してください。
 
-回答:
 ${answers.map((a, i) => `${i + 1}. ${a}`).join("\n")}
 `
+          }
+        ]
       })
     });
 
     const data = await response.json();
 
-    // 👇 ここが超重要（安全に取り出す）
-    let resultText = "";
-
-    if (data.output_text) {
-      resultText = data.output_text;
-    } else if (
-      data.output &&
-      data.output[0] &&
-      data.output[0].content &&
-      data.output[0].content[0] &&
-      data.output[0].content[0].text
-    ) {
-      resultText = data.output[0].content[0].text;
-    } else {
-      resultText = "診断は完了しましたが、結果の取得に失敗しました🙏";
-    }
+    // 👇 ここは超シンプル
+    const resultText = data.choices?.[0]?.message?.content;
 
     res.status(200).json({
-      result: resultText
+      result: resultText || "診断はできましたが、文章の取得に失敗しました🙏"
     });
 
   } catch (error) {
-    console.error("AI診断エラー:", error);
+    console.error(error);
     res.status(500).json({
       result: "ごめん、AI診断でエラーが起きた😭 もう一回試してね"
     });
   }
 }
-
