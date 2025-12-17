@@ -7,7 +7,6 @@ const sendBtn = document.getElementById("send-btn");
 let currentQuestion = 0;
 let answers = [];
 
-// 質問データ
 const questions = [
   "行ってみたい国はどこですか？",
   "留学の目的は何ですか？（英語・仕事・人生経験など）",
@@ -23,7 +22,7 @@ startBtn.addEventListener("click", () => {
 
 sendBtn.addEventListener("click", sendMessage);
 
-function sendMessage() {
+async function sendMessage() {
   const text = input.value.trim();
   if (!text) return;
 
@@ -37,27 +36,23 @@ function sendMessage() {
     if (currentQuestion < questions.length) {
       addMessage("AI", questions[currentQuestion]);
     } else {
-      showResult();
+      showResult(); // ← ここから呼ばれる
     }
   }, 600);
 }
 
-function showResult() {
-  addMessage(
-    "AI",
-    `診断結果です👇  
-あなたは「${diagnoseType()}」タイプの留学が向いています！`
-  );
-}
+async function showResult() {
+  addMessage("AI", "診断中です…");
 
-function diagnoseType() {
-  if (answers[1].includes("英語")) {
-    return "語学集中型留学";
-  }
-  if (answers[1].includes("仕事")) {
-    return "ワーホリ・キャリア型留学";
-  }
-  return "人生経験重視型留学";
+  const res = await fetch("/api/shindan", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ answers }),
+  });
+
+  const data = await res.json();
+
+  addMessage("AI", data.result);
 }
 
 function addMessage(sender, message) {
