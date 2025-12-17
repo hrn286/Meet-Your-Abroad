@@ -4,9 +4,21 @@ const chatBox = document.getElementById("chat-box");
 const input = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
+let currentQuestion = 0;
+let answers = [];
+
+// 質問データ
+const questions = [
+  "行ってみたい国はどこですか？",
+  "留学の目的は何ですか？（英語・仕事・人生経験など）",
+  "期間はどれくらい考えていますか？",
+  "一番大事にしたいことは何ですか？"
+];
+
 startBtn.addEventListener("click", () => {
   chatArea.style.display = "block";
-  addMessage("AI", "こんにちは！まずは行ってみたい国はありますか？");
+  startBtn.style.display = "none";
+  addMessage("AI", questions[currentQuestion]);
 });
 
 sendBtn.addEventListener("click", sendMessage);
@@ -16,11 +28,36 @@ function sendMessage() {
   if (!text) return;
 
   addMessage("あなた", text);
+  answers.push(text);
   input.value = "";
 
+  currentQuestion++;
+
   setTimeout(() => {
-    addMessage("AI", "なるほど！それに合う留学プランを考えてみますね 😊");
-  }, 800);
+    if (currentQuestion < questions.length) {
+      addMessage("AI", questions[currentQuestion]);
+    } else {
+      showResult();
+    }
+  }, 600);
+}
+
+function showResult() {
+  addMessage(
+    "AI",
+    `診断結果です👇  
+あなたは「${diagnoseType()}」タイプの留学が向いています！`
+  );
+}
+
+function diagnoseType() {
+  if (answers[1].includes("英語")) {
+    return "語学集中型留学";
+  }
+  if (answers[1].includes("仕事")) {
+    return "ワーホリ・キャリア型留学";
+  }
+  return "人生経験重視型留学";
 }
 
 function addMessage(sender, message) {
@@ -29,4 +66,3 @@ function addMessage(sender, message) {
   chatBox.appendChild(p);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
-
