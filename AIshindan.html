@@ -1,2 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>AI無料診断 | Meet Your Abroad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="fixed-header">
+  <a href="index.html">
+    <img src="images/aicon.png" class="header-logo" alt="ロゴ">
+  </a>
+</header>
+
+<main style="padding-top:120px; text-align:center;">
+  <h1>AI無料留学診断</h1>
+  <p>いくつか質問に答えるだけで、あなたに合う留学タイプを診断します。</p>
+
+  <button id="start-btn">診断を始める</button>
+
+  <div id="chat-area" style="display:none; max-width:600px; margin:40px auto;">
+    <div id="chat-box" style="
+      border:1px solid #ccc;
+      padding:15px;
+      height:300px;
+      overflow-y:auto;
+      text-align:left;
+    "></div>
+
+    <div style="display:flex; gap:8px; margin-top:10px;">
+      <input id="user-input" type="text" placeholder="ここに入力してね" style="flex:1;">
+      <button id="send-btn">送信</button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Meet Your Abroad</p>
+</footer>
+
+<script src="AIshindan.js"></script>
+</body>
+</html>
+
 
 
