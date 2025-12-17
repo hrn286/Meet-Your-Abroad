@@ -24,7 +24,7 @@ ${answers.map((a, i) => `${i + 1}. ${a}`).join("\n")}
     const data = await response.json();
 
     res.status(200).json({
-      result: data.output_text
+      result: data.output[0].content[0].text
     });
 
   } catch (error) {
