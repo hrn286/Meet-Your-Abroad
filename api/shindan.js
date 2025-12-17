@@ -1,30 +1,35 @@
 import OpenAI from "openai";
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).end();
-  }
+  try {
+    const client = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
 
-  const { answers } = req.body;
+    const { answers } = req.body;
 
-  const prompt = `
-以下の回答をもとに、留学タイプを診断してください。
+    const prompt = `
+あなたは留学カウンセラーです。
+以下の回答をもとに、向いている留学タイプを
+初心者にも分かりやすく日本語で診断してください。
 
 回答:
 ${answers.map((a, i) => `${i + 1}. ${a}`).join("\n")}
 `;
 
-  const response = await client.responses.create({
-    model: "gpt-4.1-mini",
-    input: prompt,
-  });
+    const response = await client.responses.create({
+      model: "gpt-4.1-mini",
+      input: prompt,
+    });
 
-  res.status(200).json({
-    result: response.output_text,
-  });
+    res.status(200).json({
+      result: response.output_text,
+    });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      result: "AI診断中にエラーが起きました。少し時間を置いて試してね🙏"
+    });
+  }
 }
-
