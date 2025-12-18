@@ -277,3 +277,26 @@ html {
   font-size: 14px;
   line-height: 1.6;
 }
+
+.country-flags {
+  display: flex;
+  gap: 12px;
+  margin: 8px 0 12px;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  background: #f5f7ff;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.country img {
+  width: 24px;
+  height: auto;
+  border-radius: 3px;
+}
+
