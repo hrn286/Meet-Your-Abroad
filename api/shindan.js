@@ -36,7 +36,8 @@ export default async function handler(req, res) {
           {
             role: "user",
             content: `
-以下の回答をもとに、向いている留学タイプを診断してください。
+            以下はユーザーの回答です。
+これをもとに留学プランを提案してください。
 
 ${answers.map((a, i) => `${i + 1}. ${a}`).join("\n")}
 `
