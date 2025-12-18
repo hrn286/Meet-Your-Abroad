@@ -246,3 +246,10 @@ html {
   line-height: 1.8;
 }
 
+@media (max-width: 600px) {
+  .result-box {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
