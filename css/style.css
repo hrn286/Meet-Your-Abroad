@@ -238,4 +238,11 @@ html {
   text-align: right;
 }
 
+.final-result {
+  background: #ffffff;
+  border-left: 5px solid #4a6cff;
+  padding: 16px;
+  margin-top: 12px;
+  line-height: 1.8;
+}
 
