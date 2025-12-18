@@ -21,6 +21,8 @@ export default async function handler(req, res) {
             【ルール】
             ・留学プランを必ず3つ提案
             ・HTML形式で出力する
+            ・``` や ```html は絶対に使わない
+            ・HTMLタグのみをそのまま出力する
             ・各プランはカードとして分ける
             
             【HTML形式（厳守）】
