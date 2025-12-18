@@ -19,12 +19,32 @@
   flex: 1;
 }
 
+#start-btn {
+  height: 56px;          /* 入力欄と揃える */
+  padding: 0 24px;      /* 横に大きく */
+  border-radius: 10px;
+  background: #FFB84D;  /* ロゴ寄りオレンジ */
+  border: none;
+  cursor: pointer;
+}
+
+
 #user-input {
   height: 56px;        /* ← 高さを大きく */
   padding: 0 16px;    /* 横に余白 */
   border-radius: 10px;
   border: 1px solid #ccc;
 }
+
+#send-btn {
+  height: 56px;          /* 入力欄と揃える */
+  padding: 0 24px;      /* 横に大きく */
+  border-radius: 10px;
+  background: #FFB84D;  /* ロゴ寄りオレンジ */
+  border: none;
+  cursor: pointer;
+}
+
 
 #chat-area > div:last-child {
   gap: 12px;
