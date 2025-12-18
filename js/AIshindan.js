@@ -42,7 +42,7 @@ async function sendMessage() {
 }
 
 async function showResult() {
-  addMessage("AI", "診断中です…");
+  addMessage("AI", "あなたに合う留学プランを考えています…✈️");
 
   const res = await fetch("/api/shindan", {
     method: "POST",
