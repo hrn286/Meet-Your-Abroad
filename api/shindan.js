@@ -31,17 +31,32 @@ export default async function handler(req, res) {
             ・各プランに「おすすめ国」を1〜2カ国指定する
             ・各国に対応する国旗画像URLも一緒に出力する
             ・国旗は img タグで表示する
+            ・国旗URLは以下の形式を使うこと：
+              https://flagcdn.com/w40/jp.png
+              https://flagcdn.com/w40/au.png
+              https://flagcdn.com/w40/ca.png
+              https://flagcdn.com/w40/us.png
+              https://flagcdn.com/w40/gb.png
+              ・国名に対応するISO2コードを使用する
+
 
             【HTML形式（厳守）】
             <div class="plan-cards">
               <div class="plan-card">
                 <h3>プラン名</h3>
+
+                <div class="country-flags">
+                  <div class="country">
+                    <img src="国旗URL" alt="国名">
+                    <span>国名</span>
+                  </div>
+                </div>
+                
                 <p><strong>向いている理由：</strong>...</p>
                 <p><strong>おすすめ地域：</strong>...</p>
                 <p><strong>期間目安：</strong>...</p>
               </div>
             </div>
-
             `
         　 },
           {
