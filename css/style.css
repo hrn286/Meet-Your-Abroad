@@ -253,3 +253,27 @@ html {
   }
 }
 
+.plan-cards {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.plan-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.plan-card h3 {
+  margin: 0 0 8px;
+  color: #4a6cff;
+  font-size: 17px;
+}
+
+.plan-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
