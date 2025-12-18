@@ -1,0 +1,43 @@
+/* =====================
+  Hero
+===================== */
+.hero {
+  padding: 0;
+}
+
+.hero-logo {
+  height: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+.hero-copy {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* =====================
+  Intro / Features
+===================== */
+.intro {
+  padding: 60px 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px 80px;
+}
+
+.feature {
+  width: 260px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.feature h3 {
+  color: #01B4ED;
+}
