@@ -18,3 +18,26 @@
 .chat-input input {
   flex: 1;
 }
+
+#user-input {
+  height: 56px;        /* ← 高さを大きく */
+  padding: 0 16px;    /* 横に余白 */
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#chat-area > div:last-child {
+  gap: 12px;
+}
+
+#send-btn:hover {
+  background: #FFA726;
+}
+
+@media (max-width: 600px) {
+  #user-input,
+  #send-btn {
+    height: 60px;
+  }
+}
+
