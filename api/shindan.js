@@ -13,7 +13,14 @@ export default async function handler(req, res) {
         messages: [
           {
             role: "system",
-            content: "あなたは優秀な留学カウンセラーです。初心者にも分かりやすく診断してください。"
+            content: `
+          あなたは経験豊富な留学カウンセラーです。
+          以下の条件を守って診断してください。
+          
+          ・初心者にも分かりやすい言葉
+          ・結論 → 理由 → おすすめの留学タイプ
+          ・最後に一言応援メッセージ
+          `
           },
           {
             role: "user",
