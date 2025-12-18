@@ -57,7 +57,9 @@ async function showResult() {
 
 function addMessage(sender, message) {
   const p = document.createElement("p");
+  p.className = sender === "AI" ? "ai-msg" : "user-msg";
   p.innerHTML = `<strong>${sender}：</strong> ${message}`;
   chatBox.appendChild(p);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
+
