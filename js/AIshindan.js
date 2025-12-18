@@ -52,14 +52,21 @@ async function showResult() {
 
   const data = await res.json();
 
-  addMessage("AI", data.result);
+  addMessage("AI", data.result, true);
 }
 
-function addMessage(sender, message) {
-  const p = document.createElement("p");
-  p.className = sender === "AI" ? "ai-msg" : "user-msg";
-  p.innerHTML = `<strong>${sender}：</strong> ${message}`;
-  chatBox.appendChild(p);
+function addMessage(sender, message, isFinal = false) {
+  const wrapper = document.createElement("div");
+  wrapper.className = sender === "AI" ? "ai-msg" : "user-msg";
+
+  if (isFinal) {
+    wrapper.innerHTML = `<div class="final-result">${message}</div>`;
+  } else {
+    wrapper.innerHTML = `<strong>${sender}：</strong> ${message}`;
+  }
+
+  chatBox.appendChild(wrapper);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
+
 
