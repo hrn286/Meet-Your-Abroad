@@ -24,7 +24,7 @@
   padding: 0 24px;      /* 横に大きく */
   border-radius: 10px;
   background: #FFB84D;  /* ロゴ寄りオレンジ */
-  border: none;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
 
@@ -41,7 +41,7 @@
   padding: 0 24px;      /* 横に大きく */
   border-radius: 10px;
   background: #FFB84D;  /* ロゴ寄りオレンジ */
-  border: none;
+　border: 1px solid #ccc;
   cursor: pointer;
 }
 
