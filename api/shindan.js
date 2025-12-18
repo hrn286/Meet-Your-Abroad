@@ -26,7 +26,12 @@ export default async function handler(req, res) {
             ・\`\`\` や \`\`\`html などのコードブロック記法は使わない
             ・説明文は書かず、HTMLタグのみを出力する
             ・最初の文字は必ず <div> から始める
-            
+
+            【追加ルール】
+            ・各プランに「おすすめ国」を1〜2カ国指定する
+            ・各国に対応する国旗画像URLも一緒に出力する
+            ・国旗は img タグで表示する
+
             【HTML形式（厳守）】
             <div class="plan-cards">
               <div class="plan-card">
