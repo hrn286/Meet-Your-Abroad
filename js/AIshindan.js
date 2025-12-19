@@ -55,6 +55,17 @@ async function showResult() {
   `
 );
 
+  const loadingMsg = document.createElement("div");
+    loadingMsg.className = "ai-msg";
+    loadingMsg.innerHTML = `
+      <div class="loading">
+        <span>診断中です…</span>
+        <span class="loading-spinner"></span>
+      </div>
+    `;
+    chatBox.appendChild(loadingMsg);
+    chatBox.scrollTop = chatBox.scrollHeight;
+
 
   const res = await fetch("/api/shindan", {
     method: "POST",
@@ -63,6 +74,8 @@ async function showResult() {
   });
 
   const data = await res.json();
+
+  chatBox.removeChild(loadingMsg);
 
   addMessage("AI", data.result, true);
 }
