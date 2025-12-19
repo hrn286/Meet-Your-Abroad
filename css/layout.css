@@ -46,6 +46,11 @@
   justify-content: center;
 }
 
+.hero-menu a {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
 .fixed-header nav ul {
   justify-content: flex-end;
 }
@@ -75,11 +80,6 @@
 .hero-menu ul li a:hover::after,
 .fixed-header nav ul li a:hover::after {
   width: 100%;
-}
-
-.header-menu a {
-  font-size: 14px;
-  line-height: 1.2;
 }
 
 
