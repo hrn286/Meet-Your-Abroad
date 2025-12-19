@@ -86,9 +86,19 @@
   display: block; /* 下の謎の余白を消す */
 }
 
+.hero {
+  padding: 0;
+}
+
 .hero-logo {
   height: 300px;
   margin: 20px auto;
   display: block;
+}
+
+.hero-copy {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
