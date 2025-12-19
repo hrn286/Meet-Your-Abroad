@@ -4,9 +4,6 @@ const chatBox = document.getElementById("chat-box");
 const input = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
-input.disabled = true;
-sendBtn.disabled = true;
-
 let currentQuestion = 0;
 let answers = [];
 
@@ -21,7 +18,7 @@ const questions = [
  ];
 
 startBtn.addEventListener("click", () => {
-  chatArea.style.display = "flex";
+  chatArea.style.display = "block";
   startBtn.style.display = "none";
   addMessage("AI", questions[currentQuestion]);
 });
@@ -42,7 +39,7 @@ async function sendMessage() {
     if (currentQuestion < questions.length) {
       addMessage("AI", questions[currentQuestion]);
     } else {
-      showResult(); 
+      showResult(); // ← ここから呼ばれる
     }
   }, 600);
 }
@@ -83,7 +80,7 @@ function addMessage(sender, message, isFinal = false) {
     wrapper.innerHTML = `<strong>${sender}：</strong> ${message}`;
   }
 
-  chatBox.appendChild(wrapper);   
+  chatBox.appendChild(wrapper);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
