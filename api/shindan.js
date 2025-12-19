@@ -37,7 +37,8 @@ export default async function handler(req, res) {
               https://flagcdn.com/w40/ca.png
               https://flagcdn.com/w40/us.png
               https://flagcdn.com/w40/gb.png
-              ・国名に対応するISO2コードを使用する
+            ・国名に対応するISO2コードは必ず小文字で使用する（例：us, jp）
+            
 
 
             【HTML形式（厳守）】
