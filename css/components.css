@@ -75,4 +75,15 @@
   border-radius: 3px;
 }
 
+.logo {
+  display: inline-block;
+  text-decoration: none; /* 念のため */
+}
+
+.logo img {
+  height: 40px;   /* ← ロゴの基準サイズ */
+  width: auto;
+  display: block; /* 下の謎の余白を消す */
+}
+
 
