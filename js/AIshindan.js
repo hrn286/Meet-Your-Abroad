@@ -9,11 +9,15 @@ sendBtn.disabled = true;
 
 let currentQuestion = 0;
 let answers = [];
-let offset = 0;
 
 function pushUp() {
-  offset += 60; 
-  chatBox.style.transform = `translateY(-${offset}px)`;
+  const lastMessage = chatBox.lastElementChild;
+  if (!lastMessage) return;
+
+  lastMessage.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
 }
 
 const questions = [
