@@ -73,9 +73,24 @@
   </footer>
   
   <script src="/js/contact.js"></script>
+
+  <script>
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector(".fixed-header");
+      if (!header) return;
+  
+      if (window.scrollY > 80) {
+        header.style.display = "flex";
+      } else {
+        header.style.display = "none";
+      }
+    });
+  </script>
+
   
 </body>
 </html>
+
 
 
 
