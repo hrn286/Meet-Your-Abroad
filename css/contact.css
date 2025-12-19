@@ -45,12 +45,13 @@
   text-align: center;
 }
 
-#submit-btn {
-  height: 56px;          /* 入力欄と揃える */
-  padding: 0 24px;      /* 横に大きく */
-  border-radius: 10px;
-  background: #FFB84D;  /* ロゴ寄りオレンジ */
+.btn-primary {
+  width: 100%;
+  height: 52px;
+  background: #FFB84D;
   border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
   cursor: pointer;
 }
 
