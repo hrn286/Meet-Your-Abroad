@@ -55,3 +55,12 @@
   text-align: center;
 }
 
+#send-btn {
+  height: 56px;          /* 入力欄と揃える */
+  padding: 0 24px;      /* 横に大きく */
+  border-radius: 10px;
+  background: #FFB84D;  /* ロゴ寄りオレンジ */
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
