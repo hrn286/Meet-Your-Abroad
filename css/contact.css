@@ -64,3 +64,7 @@
   cursor: pointer;
 }
 
+#send-btn:hover {
+  background: #FFA726;
+}
+
