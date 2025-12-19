@@ -4,6 +4,9 @@ const chatBox = document.getElementById("chat-box");
 const input = document.getElementById("user-input");
 const sendBtn = document.getElementById("send-btn");
 
+input.disabled = true;
+sendBtn.disabled = true;
+
 let currentQuestion = 0;
 let answers = [];
 let offset = 0;
@@ -26,6 +29,10 @@ const questions = [
 startBtn.addEventListener("click", () => {
   chatArea.style.display = "flex";
   startBtn.style.display = "none";
+  
+  input.disabled = false;
+  sendBtn.disabled = false;
+  
   addMessage("AI", questions[currentQuestion]);
 });
 
