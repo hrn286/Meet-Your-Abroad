@@ -49,7 +49,7 @@ async function showResult() {
     loadingMsg.className = "ai-msg";
     loadingMsg.innerHTML = `
       <div class="loading">
-        <span>あなたに合う留学プランを考えています…✈️</span>
+        <span>あなたに合う留学プランを考えています…</span>
         <span class="loading-spinner"></span>
       </div>
     `;
