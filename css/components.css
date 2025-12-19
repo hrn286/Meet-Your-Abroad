@@ -86,4 +86,9 @@
   display: block; /* 下の謎の余白を消す */
 }
 
+.hero-logo {
+  height: 300px;
+  margin: 20px auto;
+  display: block;
+}
 
