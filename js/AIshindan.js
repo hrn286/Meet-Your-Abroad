@@ -18,7 +18,7 @@ const questions = [
  ];
 
 startBtn.addEventListener("click", () => {
-  chatArea.style.display = "block";
+  chatArea.style.display = "flex";
   startBtn.style.display = "none";
   addMessage("AI", questions[currentQuestion]);
 });
