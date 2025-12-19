@@ -41,10 +41,13 @@
   padding: 0 24px;      /* 横に大きく */
   border-radius: 10px;
   background: #FFB84D;  /* ロゴ寄りオレンジ */
-　border: 1px solid #ccc;
+  border: 1px solid #ccc;
   cursor: pointer;
 }
 
+#start-btn:hover {
+  background: #FFA726;
+}
 
 #chat-area > div:last-child {
   gap: 12px;
