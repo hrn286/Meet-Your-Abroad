@@ -6,16 +6,18 @@
 .chat-area {
   display: none;
   max-width: 600px;
-  margin: 40px auto;
-  height: 500px;              
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  height: 100vh;              
+  position: relative;
 }
 
 .chat-input {
-  display: flex;
-  gap: 8px;
-  margin-top: 10px;
+  position: sticky;
+  top: 60%;                   
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 12px;
+  z-index: 10;
 }
 
 .chat-input input {
@@ -61,8 +63,8 @@
 }
 
 #chat-box {
-  flex: 1;   
-  overflow-y: auto;        /* ← これ重要 */
+  padding-top: 40px;
+  padding-bottom: 200px;       
   scroll-behavior: smooth;
 }
 
