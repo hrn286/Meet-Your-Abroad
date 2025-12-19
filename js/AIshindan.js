@@ -45,21 +45,11 @@ async function sendMessage() {
 }
 
 async function showResult() {
-  addMessage(
-  "AI",
-  `
-  <div class="loading">
-    <span>あなたに合う留学プランを考えています…✈️</span>
-    <span class="loading-spinner"></span>
-  </div>
-  `
-);
-
   const loadingMsg = document.createElement("div");
     loadingMsg.className = "ai-msg";
     loadingMsg.innerHTML = `
       <div class="loading">
-        <span>診断中です…</span>
+        <span>あなたに合う留学プランを考えています…✈️</span>
         <span class="loading-spinner"></span>
       </div>
     `;
