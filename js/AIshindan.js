@@ -95,8 +95,9 @@ function addMessage(sender, message, isFinal = false) {
     wrapper.innerHTML = `<strong>${sender}：</strong> ${message}`;
   }
 
-  chatBox.appendChild(loadingMsg);
+  chatBox.appendChild(wrapper);   
   chatBox.scrollTop = chatBox.scrollHeight;
 }
+
 
 
