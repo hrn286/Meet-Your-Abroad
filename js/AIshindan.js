@@ -33,10 +33,6 @@ const questions = [
 startBtn.addEventListener("click", () => {
   chatArea.style.display = "flex";
   startBtn.style.display = "none";
-  
-  input.disabled = false;
-  sendBtn.disabled = false;
-  
   addMessage("AI", questions[currentQuestion]);
 });
 
@@ -99,7 +95,7 @@ function addMessage(sender, message, isFinal = false) {
     wrapper.innerHTML = `<strong>${sender}：</strong> ${message}`;
   }
 
-  chatBox.appendChild(wrapper);
+  chatBox.appendChild(loadingMsg);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
 
