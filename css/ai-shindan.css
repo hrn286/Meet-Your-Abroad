@@ -62,7 +62,6 @@
 
 #chat-box {
   flex: 1;   
-  max-height: 360px;       /* ← 好きな高さ */
   overflow-y: auto;        /* ← これ重要 */
   scroll-behavior: smooth;
 }
