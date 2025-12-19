@@ -53,12 +53,13 @@
   background: #FFA726;
 }
 
-#chat-area > div:last-child {
+#chat-area {
   gap: 12px;
 }
 
 #send-btn:hover {
   background: #FFA726;
+  
 #chat-box {
   max-height: 360px;       /* ← 好きな高さ */
   overflow-y: auto;        /* ← これ重要 */
