@@ -55,7 +55,7 @@
   text-align: center;
 }
 
-#send-btn {
+#submit-btn {
   height: 56px;          /* 入力欄と揃える */
   padding: 0 24px;      /* 横に大きく */
   border-radius: 10px;
@@ -64,7 +64,7 @@
   cursor: pointer;
 }
 
-#send-btn:hover {
+#submit-btn:hover {
   background: #FFA726;
 }
 
