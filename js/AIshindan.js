@@ -6,6 +6,12 @@ const sendBtn = document.getElementById("send-btn");
 
 let currentQuestion = 0;
 let answers = [];
+let offset = 0;
+
+function pushUp() {
+  offset += 60; 
+  chatBox.style.transform = `translateY(-${offset}px)`;
+}
 
 const questions = [
   "留学先で一番大事にしたいことは何ですか？（例：成長・楽しさ・安心感・刺激）",
@@ -30,6 +36,7 @@ async function sendMessage() {
   if (!text) return;
 
   addMessage("あなた", text);
+  pushUp();
   answers.push(text);
   input.value = "";
 
@@ -38,8 +45,9 @@ async function sendMessage() {
   setTimeout(() => {
     if (currentQuestion < questions.length) {
       addMessage("AI", questions[currentQuestion]);
+      pushUp();
     } else {
-      showResult(); // ← ここから呼ばれる
+      showResult(); 
     }
   }, 600);
 }
