@@ -6,17 +6,13 @@
 .chat-area {
   display: none;
   max-width: 600px;
-  margin: 0 auto;
-  height: 80vh;             
-  flex-direction: column;
+  margin: 40px auto;
 }
 
 .chat-input {
   display: flex;
   gap: 8px;
-  width: 100%;
-  background: #fff;
-  padding: 12px;
+  margin-top: 10px;
 }
 
 .chat-input input {
@@ -61,13 +57,12 @@
   gap: 12px;
 }
 
+#send-btn:hover {
+  background: #FFA726;
 #chat-box {
-  flex: 1;                
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 20px 0;
+  max-height: 360px;       /* ← 好きな高さ */
+  overflow-y: auto;        /* ← これ重要 */
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 600px) {
