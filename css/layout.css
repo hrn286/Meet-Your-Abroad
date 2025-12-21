@@ -111,11 +111,40 @@
 }
 
 /* 今開いているメニューを強調 */
-.page-open .nav-open {
+.page-ai .nav-ai {
   color: #0077cc;        /* 好きな色に変えてOK */
   font-weight: bold;
   border-bottom: 2px solid #0077cc;
 }
 
+.page-home .nav-home {
+  color: #0077cc;        /* 好きな色に変えてOK */
+  font-weight: bold;
+  border-bottom: 2px solid #0077cc;
+}
+
+.page-about .nav-about {
+  color: #0077cc;        /* 好きな色に変えてOK */
+  font-weight: bold;
+  border-bottom: 2px solid #0077cc;
+}
+
+.page-contact .nav-contact {
+  color: #0077cc;        /* 好きな色に変えてOK */
+  font-weight: bold;
+  border-bottom: 2px solid #0077cc;
+}
+
+.page-form .nav-form {
+  color: #0077cc;        /* 好きな色に変えてOK */
+  font-weight: bold;
+  border-bottom: 2px solid #0077cc;
+}
+
+.page-taikendan .nav-taikendan {
+  color: #0077cc;        /* 好きな色に変えてOK */
+  font-weight: bold;
+  border-bottom: 2px solid #0077cc;
+}
 
 
