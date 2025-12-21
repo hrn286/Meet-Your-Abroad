@@ -151,8 +151,90 @@
   border-bottom: 2px solid #eeeeee;
 }
 
-.nav-menu a {
-  display: inline-block;
+/* =========================
+  ナビ：現在地＋hover演出
+========================= */
+
+/* ナビリンク共通 */
+.hero-menu ul li a,
+.fixed-header nav ul li a {
+  position: relative;
+  padding: 8px 12px;
 }
+
+/* 下線（初期は見えない） */
+.hero-menu ul li a::after,
+.fixed-header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+/* hoverしたリンクだけ下線表示 */
+.hero-menu ul li a:hover::after,
+.fixed-header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+  今いるページの表示
+========================= */
+
+.page-ai .nav-ai,
+.page-about .nav-about,
+.page-contact .nav-contact,
+.page-form .nav-form,
+.page-taikendan .nav-taikendan {
+  font-weight: 600;
+  background-color: #e2e2e2;
+  border-radius: 8px;
+}
+
+/* 今いるページは下線を常に表示 */
+.page-ai .nav-ai::after,
+.page-about .nav-about::after,
+.page-contact .nav-contact::after,
+.page-form .nav-form::after,
+.page-taikendan .nav-taikendan::after {
+  width: 100%;
+}
+
+/* =========================
+  ナビにカーソルが入ったら
+  現在地表示を一旦消す
+========================= */
+
+.hero-menu:hover .nav-ai,
+.hero-menu:hover .nav-about,
+.hero-menu:hover .nav-contact,
+.hero-menu:hover .nav-form,
+.hero-menu:hover .nav-taikendan,
+.fixed-header:hover .nav-ai,
+.fixed-header:hover .nav-about,
+.fixed-header:hover .nav-contact,
+.fixed-header:hover .nav-form,
+.fixed-header:hover .nav-taikendan {
+  background-color: transparent;
+}
+
+/* 下線も消す */
+.hero-menu:hover .nav-ai::after,
+.hero-menu:hover .nav-about::after,
+.hero-menu:hover .nav-contact::after,
+.hero-menu:hover .nav-form::after,
+.hero-menu:hover .nav-taikendan::after,
+.fixed-header:hover .nav-ai::after,
+.fixed-header:hover .nav-about::after,
+.fixed-header:hover .nav-contact::after,
+.fixed-header:hover .nav-form::after,
+.fixed-header:hover .nav-taikendan::after {
+  width: 0%;
+}
+
 
 
