@@ -116,6 +116,7 @@
   background-color: #eeeeee; /* #f7f7f7 より少し濃い */
   padding: 8px 12px;         /* 背景を文字より少し大きく */
   border-radius: 8px;        /* 角をちょい丸く（好み） */
+  border-bottom: 2px solid #eeeeee;
 }
 
 .page-about .nav-about {
@@ -123,6 +124,7 @@
   background-color: #eeeeee; /* #f7f7f7 より少し濃い */
   padding: 8px 12px;         /* 背景を文字より少し大きく */
   border-radius: 8px;        /* 角をちょい丸く（好み） */
+  border-bottom: 2px solid #eeeeee;
 }
 
 .page-contact .nav-contact {
@@ -130,6 +132,7 @@
   background-color: #eeeeee; /* #f7f7f7 より少し濃い */
   padding: 8px 12px;         /* 背景を文字より少し大きく */
   border-radius: 8px;        /* 角をちょい丸く（好み） */
+  border-bottom: 2px solid #eeeeee;
 }
 
 .page-form .nav-form {
@@ -137,6 +140,7 @@
   background-color: #eeeeee; /* #f7f7f7 より少し濃い */
   padding: 8px 12px;         /* 背景を文字より少し大きく */
   border-radius: 8px;        /* 角をちょい丸く（好み） */
+  border-bottom: 2px solid #eeeeee;
 }
 
 .page-taikendan .nav-taikendan {
@@ -144,6 +148,7 @@
   background-color: #eeeeee; /* #f7f7f7 より少し濃い */
   padding: 8px 12px;         /* 背景を文字より少し大きく */
   border-radius: 8px;        /* 角をちょい丸く（好み） */
+  border-bottom: 2px solid #eeeeee;
 }
 
 .nav-menu a {
