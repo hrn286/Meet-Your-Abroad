@@ -112,33 +112,38 @@
 
 /* 今開いているメニューを強調 */
 .page-ai .nav-ai {
-  color: #0077cc;        /* 好きな色に変えてOK */
-  font-weight: bold;
-  border-bottom: 2px solid #0077cc;
+  font-weight: 600;          /* 太すぎない太字 */
+  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
+  padding: 6px 10px;         /* 背景を文字より少し大きく */
+  border-radius: 4px;        /* 角をちょい丸く（好み） */
 }
 
 .page-about .nav-about {
-  color: #0077cc;        /* 好きな色に変えてOK */
-  font-weight: bold;
-  border-bottom: 2px solid #0077cc;
+  font-weight: 600;          /* 太すぎない太字 */
+  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
+  padding: 6px 10px;         /* 背景を文字より少し大きく */
+  border-radius: 4px;        /* 角をちょい丸く（好み） */
 }
 
 .page-contact .nav-contact {
-  color: #0077cc;        /* 好きな色に変えてOK */
-  font-weight: bold;
-  border-bottom: 2px solid #0077cc;
+  font-weight: 600;          /* 太すぎない太字 */
+  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
+  padding: 6px 10px;         /* 背景を文字より少し大きく */
+  border-radius: 4px;        /* 角をちょい丸く（好み） */
 }
 
 .page-form .nav-form {
-  color: #0077cc;        /* 好きな色に変えてOK */
-  font-weight: bold;
-  border-bottom: 2px solid #0077cc;
+  font-weight: 600;          /* 太すぎない太字 */
+  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
+  padding: 6px 10px;         /* 背景を文字より少し大きく */
+  border-radius: 4px;        /* 角をちょい丸く（好み） */
 }
 
 .page-taikendan .nav-taikendan {
-  color: #0077cc;        /* 好きな色に変えてOK */
-  font-weight: bold;
-  border-bottom: 2px solid #0077cc;
+  font-weight: 600;          /* 太すぎない太字 */
+  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
+  padding: 6px 10px;         /* 背景を文字より少し大きく */
+  border-radius: 4px;        /* 角をちょい丸く（好み） */
 }
 
 
