@@ -113,37 +113,41 @@
 /* 今開いているメニューを強調 */
 .page-ai .nav-ai {
   font-weight: 600;          /* 太すぎない太字 */
-  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
-  padding: 6px 10px;         /* 背景を文字より少し大きく */
-  border-radius: 4px;        /* 角をちょい丸く（好み） */
+  background-color: #e2e2e2; /* #f7f7f7 より少し濃い */
+  padding: 8px 12px;         /* 背景を文字より少し大きく */
+  border-radius: 8px;        /* 角をちょい丸く（好み） */
 }
 
 .page-about .nav-about {
   font-weight: 600;          /* 太すぎない太字 */
-  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
-  padding: 6px 10px;         /* 背景を文字より少し大きく */
-  border-radius: 4px;        /* 角をちょい丸く（好み） */
+  background-color: #e2e2e2; /* #f7f7f7 より少し濃い */
+  padding: 8px 12px;         /* 背景を文字より少し大きく */
+  border-radius: 8px;        /* 角をちょい丸く（好み） */
 }
 
 .page-contact .nav-contact {
   font-weight: 600;          /* 太すぎない太字 */
-  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
-  padding: 6px 10px;         /* 背景を文字より少し大きく */
-  border-radius: 4px;        /* 角をちょい丸く（好み） */
+  background-color: #e2e2e2; /* #f7f7f7 より少し濃い */
+  padding: 8px 12px;         /* 背景を文字より少し大きく */
+  border-radius: 8px;        /* 角をちょい丸く（好み） */
 }
 
 .page-form .nav-form {
   font-weight: 600;          /* 太すぎない太字 */
-  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
-  padding: 6px 10px;         /* 背景を文字より少し大きく */
-  border-radius: 4px;        /* 角をちょい丸く（好み） */
+  background-color: #e2e2e2; /* #f7f7f7 より少し濃い */
+  padding: 8px 12px;         /* 背景を文字より少し大きく */
+  border-radius: 8px;        /* 角をちょい丸く（好み） */
 }
 
 .page-taikendan .nav-taikendan {
   font-weight: 600;          /* 太すぎない太字 */
-  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
-  padding: 6px 10px;         /* 背景を文字より少し大きく */
-  border-radius: 4px;        /* 角をちょい丸く（好み） */
+  background-color: #e2e2e2; /* #f7f7f7 より少し濃い */
+  padding: 8px 12px;         /* 背景を文字より少し大きく */
+  border-radius: 8px;        /* 角をちょい丸く（好み） */
+}
+
+.nav-menu a {
+  display: inline-block;
 }
 
 
