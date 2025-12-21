@@ -110,5 +110,12 @@
   text-decoration: none; /* 念のため */
 }
 
+/* 今開いているメニューを強調 */
+.page-open .nav-open {
+  color: #0077cc;        /* 好きな色に変えてOK */
+  font-weight: bold;
+  border-bottom: 2px solid #0077cc;
+}
+
 
 
