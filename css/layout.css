@@ -120,7 +120,7 @@
 
 .page-about .nav-about {
   font-weight: 600;          /* 太すぎない太字 */
-  background-color: #eeeeee /* #f7f7f7 より少し濃い */
+  background-color: #eeeeee; /* #f7f7f7 より少し濃い */
   padding: 8px 12px;         /* 背景を文字より少し大きく */
   border-radius: 8px;        /* 角をちょい丸く（好み） */
 }
