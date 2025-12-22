@@ -59,3 +59,19 @@
   background: #FFA726;
 }
 
+.form-agreement {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 16px 0;
+  line-height: 1.6;
+}
+
+.form-agreement a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.form-agreement a:hover {
+  opacity: 0.7;
+}
+
