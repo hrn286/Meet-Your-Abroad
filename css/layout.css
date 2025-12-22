@@ -185,16 +185,6 @@
   今いるページの表示
 ========================= */
 
-.page-ai .nav-ai,
-.page-about .nav-about,
-.page-contact .nav-contact,
-.page-form .nav-form,
-.page-taikendan .nav-taikendan {
-  font-weight: 600;
-  background-color: #e2e2e2;
-  border-radius: 4px;
-}
-
 /* 今いるページは下線を常に表示 */
 .page-ai .nav-ai::after,
 .page-about .nav-about::after,
@@ -208,20 +198,6 @@
   ナビにカーソルが入ったら
   現在地表示を一旦消す
 ========================= */
-
-.hero-menu:hover .nav-ai,
-.hero-menu:hover .nav-about,
-.hero-menu:hover .nav-contact,
-.hero-menu:hover .nav-form,
-.hero-menu:hover .nav-taikendan,
-.fixed-header:hover .nav-ai,
-.fixed-header:hover .nav-about,
-.fixed-header:hover .nav-contact,
-.fixed-header:hover .nav-form,
-.fixed-header:hover .nav-taikendan {
-  background-color: transparent;
-  border-bottom: none; 
-}
 
 /* 下線も消す */
 .hero-menu:hover .nav-ai::after,
