@@ -219,7 +219,7 @@
 .fixed-header:hover .nav-contact,
 .fixed-header:hover .nav-form,
 .fixed-header:hover .nav-taikendan {
-  background-color: transparent;
+  background-color: #eeeeee;
 }
 
 /* 下線も消す */
