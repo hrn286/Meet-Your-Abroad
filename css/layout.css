@@ -220,6 +220,7 @@
 .fixed-header:hover .nav-form,
 .fixed-header:hover .nav-taikendan {
   background-color: transparent;
+  border-bottom: none; 
 }
 
 /* 下線も消す */
