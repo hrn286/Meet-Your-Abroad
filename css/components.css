@@ -74,3 +74,61 @@
   width: 24px;
   border-radius: 3px;
 }
+
+/* =========================
+   Policy Pages
+========================= */
+
+.policy {
+  max-width: 800px;
+  margin: 80px auto 120px;
+  padding: 0 20px;
+  color: #333;
+}
+
+.policy h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.policy h2 {
+  font-size: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  border-left: 4px solid #333;
+}
+
+.policy p {
+  margin: 12px 0;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.policy ul {
+  margin: 12px 0 12px 20px;
+}
+
+.policy li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* モバイル調整 */
+@media (max-width: 768px) {
+  .policy {
+    margin: 60px auto 100px;
+  }
+
+  .policy h1 {
+    font-size: 1.6rem;
+  }
+
+  .policy h2 {
+    font-size: 1.1rem;
+  }
+}
+
