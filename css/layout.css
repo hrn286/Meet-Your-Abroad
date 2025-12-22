@@ -21,6 +21,39 @@
   display: block;
 }
 
+.logo {
+  display: inline-block;
+  text-decoration: none; /* 念のため */
+}
+
+.logo img {
+  height: 300px;   /* ← ロゴの基準サイズ */
+  width: auto;
+  display: block; /* 下の謎の余白を消す */
+}
+
+.hero {
+  padding: 0;
+}
+
+.hero-logo {
+  height: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+.hero-copy {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.hero-title{
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 10px
+}
+
 /* =====================
   Navigation (Hero & Header)
 ===================== */
@@ -104,12 +137,6 @@
   width: 60px;
   height: auto;
 }
-
-.logo {
-  display: inline-block;
-  text-decoration: none; /* 念のため */
-}
-
 
 /* =========================
   ナビ：現在地＋hover演出
