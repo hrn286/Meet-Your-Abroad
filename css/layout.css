@@ -138,6 +138,26 @@
   height: auto;
 }
 
+.footer-links {
+  margin-top: 6px;
+  font-size: 0.8rem;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links .separator {
+  margin: 0 6px;
+  color: #aaa;
+}
+
+
 /* =========================
   ナビ：現在地＋hover演出
 ========================= */
