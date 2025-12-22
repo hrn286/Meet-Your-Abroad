@@ -155,13 +155,6 @@
   ナビ：現在地＋hover演出
 ========================= */
 
-/* ナビリンク共通 */
-.hero-menu ul li a,
-.fixed-header nav ul li a {
-  position: relative;
-  padding: 8px 12px;
-}
-
 /* 下線（初期は見えない） */
 .hero-menu ul li a::after,
 .fixed-header nav ul li a::after {
