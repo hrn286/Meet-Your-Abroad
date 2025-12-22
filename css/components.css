@@ -83,10 +83,8 @@
   max-width: 900px;
   margin: 80px 0 120px;      /* 左右は0にする */
   padding: 0 40px;           /* 左に揃えつつ、余白は確保 */
-  text-align: left;          /* 念のため */
   color: #333;
   margin-left: 80px;
-  transform: translateX(-80px); /* ← 左基準のまま位置調整 */
 }
 
 .policy h1 {
@@ -124,7 +122,6 @@
 @media (max-width: 768px) {
   .policy {
     margin: 60px 0 100px;
-    transform: none;
     padding: 0 20px;
   }
 
