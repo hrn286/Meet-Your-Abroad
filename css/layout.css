@@ -236,5 +236,10 @@
   width: 0%;
 }
 
+/* ナビhover中でも、リンクhoverは最優先で下線表示 */
+.hero-menu ul li a:hover::after,
+.fixed-header nav ul li a:hover::after {
+  width: 100% !important;
+}
 
 
