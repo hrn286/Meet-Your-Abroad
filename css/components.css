@@ -81,10 +81,9 @@
 
 .policy {
   max-width: 900px;
-  margin: 80px 0 120px;      /* 左右は0にする */
-  padding: 0 10px;           /* 左に揃えつつ、余白は確保 */
+  margin: 80px auto 120px;  /* ← 左右を自動で同じにする */
+  padding: 0 20px;          /* ← 内側余白は均等 */
   color: #333;
-  margin-left: 80px;
   text-align: left;   
 }
 
