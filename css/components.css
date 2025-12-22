@@ -80,37 +80,35 @@
 ========================= */
 
 .policy {
-  max-width: 900px;
-  margin: 80px 40px 120px; /* 中央 auto をやめる */
-  padding: 0;
+  width: 100%;
+  max-width: none;           /* 中央寄せ用の制限を解除 */
+  margin: 80px 0 120px;      /* 左右は0にする */
+  padding: 0 40px;           /* 左に揃えつつ、余白は確保 */
+  text-align: left;          /* 念のため */
   color: #333;
 }
 
-/* タイトル */
 .policy h1 {
   font-size: 2rem;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   border-bottom: 2px solid #ddd;
   padding-bottom: 8px;
 }
 
-/* セクション見出し */
 .policy h2 {
   font-size: 1.2rem;
-  margin-top: 48px;
+  margin-top: 40px;
   margin-bottom: 12px;
   padding-left: 10px;
   border-left: 4px solid #333;
 }
 
-/* 本文 */
 .policy p {
   margin: 12px 0;
   line-height: 1.9;
   font-size: 0.95rem;
 }
 
-/* リスト */
 .policy ul {
   margin: 12px 0 12px 24px;
 }
@@ -124,7 +122,8 @@
 /* モバイル */
 @media (max-width: 768px) {
   .policy {
-    margin: 60px 20px 100px;
+    margin: 60px 0 100px;
+    padding: 0 20px;
   }
 
   .policy h1 {
