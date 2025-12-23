@@ -21,13 +21,19 @@
   display: block;
 }
 
+.logo{
+  height: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
 .hero {
   padding: 0;
 }
 
 .hero-logo {
-  height: 300px;
-  margin: 20px auto;
+  height: 200px;
+  margin: 10px auto;
   display: block;
 }
 
