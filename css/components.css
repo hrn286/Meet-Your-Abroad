@@ -133,3 +133,51 @@
     font-size: 1.1rem;
   }
 }
+
+/* =========================
+   Policy Table of Contents
+========================= */
+
+.policy-toc {
+  max-width: 520px;
+  margin: 40px auto 60px;
+  padding: 24px 20px;
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fafafa;
+
+  text-align: center;
+}
+
+.policy-toc .toc-title {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.policy-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.policy-toc li {
+  margin: 10px 0;
+}
+
+.policy-toc a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.policy-toc a:hover {
+  text-decoration: underline;
+}
+
+.policy h2 {
+  scroll-margin-top: 120px;
+}
+
