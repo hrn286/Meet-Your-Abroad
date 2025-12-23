@@ -35,6 +35,10 @@
   border-color: #FFB84D;
 }
 
+.form-select{
+  font-weight: 400;
+}
+
 .form-status {
   margin-top: 16px;
   text-align: center;
