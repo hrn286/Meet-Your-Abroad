@@ -8,3 +8,63 @@
   margin-bottom: 40px;
   color: #555;
 }
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #FFB84D;
+}
+
+.form-status {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 52px;
+  background: #FFB84D;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #FFA726;
+}
+
+.form-agreement {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 16px 0;
+  line-height: 1.6;
+}
+
+.form-agreement a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.form-agreement a:hover {
+  opacity: 0.7;
+}
