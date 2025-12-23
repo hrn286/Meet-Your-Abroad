@@ -26,38 +26,43 @@
      <img src="images/aicon.png" alt="ロゴ" class="hero-logo">
      <h1 class="hero-title">ABOUT</h1>
    </section>
-  
-  <footer class="site-footer">
-    <div class="footer-left">
-      <nav class="footer-links">
-          <a href="terms.html">利用規約</a>
-          <span class="separator">｜</span>
-          <a href="privacy.html">プライバシーポリシー</a>
-      </nav>
-      <p>© 2025 Meet Your Abroad</p>
-    </div>
-  
-    <div class="footer-right">
-      <img src="images/aicon.png" alt="Meet Your Abroad logo">
-    </div>
-  </footer>
 
-  <script>
-    window.addEventListener("scroll", function() {
-      const header = document.querySelector(".fixed-header");
-      if (!header) return;
+   <main class="about-main">
+     <p>このサイト「Meet Your Abroad」は、留学を考える学生・社会人のために、実際に留学を経験した人の出国前の準備段階から実際に飛び立つまでのリアルな体験談を集めて紹介するサイトです。管理人は日本の大学生で、現在半年間のドイツ留学中です。SNSでは留学中の体験も発信していきます！</p>
+   </main>
   
-      if (window.scrollY > 80) {
-        header.style.display = "flex";
-      } else {
-        header.style.display = "none";
-      }
-    });
-  </script>
+    <footer class="site-footer">
+      <div class="footer-left">
+        <nav class="footer-links">
+            <a href="terms.html">利用規約</a>
+            <span class="separator">｜</span>
+            <a href="privacy.html">プライバシーポリシー</a>
+        </nav>
+        <p>© 2025 Meet Your Abroad</p>
+      </div>
+    
+      <div class="footer-right">
+        <img src="images/aicon.png" alt="Meet Your Abroad logo">
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function() {
+        const header = document.querySelector(".fixed-header");
+        if (!header) return;
+    
+        if (window.scrollY > 80) {
+          header.style.display = "flex";
+        } else {
+          header.style.display = "none";
+        }
+      });
+    </script>
 
   
 </body>
 </html>
+
 
 
 
