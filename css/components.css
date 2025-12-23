@@ -152,6 +152,7 @@
 
 .policy-toc .toc-title {
   font-size: 1rem;
+  margin-top: 0;
   margin-bottom: 16px;
   font-weight: bold;
   color: #333;
