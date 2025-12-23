@@ -15,8 +15,11 @@
 }
 
 .form-group label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1em;
   margin-bottom: 8px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .form-group input,
@@ -32,10 +35,6 @@
 .form-group textarea:focus {
   outline: none;
   border-color: #FFB84D;
-}
-
-.form-select{
-  font-weight: 400;
 }
 
 .form-status {
