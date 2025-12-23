@@ -1,7 +1,10 @@
 .ai-main {
   padding-top: 120px;
   text-align: center;
-  margin-top: 2px;
+}
+
+.ai-lead{
+  margin-bottom: 5px;
 }
 
 .chat-area {
