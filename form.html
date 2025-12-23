@@ -46,16 +46,16 @@
   
         <div class="form-group">
           <label for="destination">留学先（国、都市）</label>
-          <input id="destination" name="destination" required></input>
+          <input id="destination" name="destination" required>
         </div>
 
         <div class="form-group">
           <label for="period">留学期間</label>
-          <input id="period" name="period" required></input>
+          <input id="period" name="period" required>
         </div>
 
         <div class="form-group">
-          <label for="period">留学前の言語レベル（留学先で主に使用した外国語）</label>
+          <label>留学前の言語レベル（留学先で主に使用した外国語）</label>
           <div class="form-select">
             <label>
               <input type="radio" name="lanlevel" value="全く話せない" required>全く話せない
@@ -70,6 +70,38 @@
             </label>
           </div>  
         </div>
+
+        <div class="form-group">
+          <label>留学後の言語レベル</label>
+          <div class="form-select">
+            <label>
+              <input type="radio" name="lanlevel" value="全く話せない" required>全く話せない
+            </label>
+           
+            <label>
+               <input type="radio" name="lanlevel" value="挨拶など基本的な会話ができる" required>挨拶など基本的な会話ができる
+            </label>
+            
+            <label>
+              <input type="radio" name="lanlevel" value="授業などの内容が理解でき、自分の意見も言えるレベル" required>授業などの内容が理解でき、自分の意見も言えるレベル
+            </label>
+          </div>  
+        </div>
+
+        <div class="form-group">
+          <label for="ready">留学の準備について（特に奨学金、荷物、費用などを書いてもらえると嬉しいです）</label>
+          <textarea id="ready" name="ready" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="taikendan">留学体験談（留学決定までの過程、留学中の良かった点や困ったことなど）</label>
+          <textarea id="taikendan" name="taikendan" rows="6" required></textarea>
+        </div>  
+
+        <div class="form-group">
+          <label for="titlesuggest">記事のタイトル案</label>
+          <input id="titlesuggest" name="titlesuggest">
+        </div>  
   
         <p class="form-agreement">
           送信することで、
@@ -117,6 +149,7 @@
   
 </body>
 </html>
+
 
 
 
