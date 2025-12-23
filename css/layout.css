@@ -21,17 +21,6 @@
   display: block;
 }
 
-.logo {
-  display: inline-block;
-  text-decoration: none; /* 念のため */
-}
-
-.logo img {
-  height: 300px;   /* ← ロゴの基準サイズ */
-  width: auto;
-  display: block; /* 下の謎の余白を消す */
-}
-
 .hero {
   padding: 0;
 }
