@@ -22,13 +22,13 @@
 
 .form-select label {
   display: flex;
-  align-items: left;
+  align-items: center;
   margin-bottom: 8px;
   font-weight: normal;
 }
 
 .form-select input[type="radio"] {
-  margin-right: 0.5em;
+  margin-right: 0.2em;
 }
 
 .form-group input,
