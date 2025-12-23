@@ -46,12 +46,21 @@
   
         <div class="form-group">
           <label for="destination">留学先（国、都市）</label>
-          <textarea id="destination" name="destination" required></textarea>
+          <input id="destination" name="destination" required></input>
         </div>
 
         <div class="form-group">
           <label for="period">留学期間</label>
-          <textarea id="period" name="period" required></textarea>
+          <input id="period" name="period" required></input>
+        </div>
+
+        <div class="form-group">
+          <label for="period">留学前の言語レベル（留学先で主に使用した外国語）</label>
+          <button type="radio" id="lanlevel" name="lanlevel" required>
+            <label>全く話せない</label>
+            <label>挨拶など基本的な会話ができる</label>
+            <label>授業などの内容が理解でき、自分の意見も言えるレベル</label>
+          </button>
         </div>
   
         <p class="form-agreement">
@@ -100,6 +109,7 @@
   
 </body>
 </html>
+
 
 
 
