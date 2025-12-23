@@ -23,9 +23,9 @@
 .form-select label {
   display: inline-flex;
   align-items: left;
-  max-width: 600px;
   margin-bottom: 8px;
   font-weight: normal;
+  margin-right: 2em;
 }
 
 .form-group input,
