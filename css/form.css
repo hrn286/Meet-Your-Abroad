@@ -14,18 +14,21 @@
   margin-bottom: 24px;
 }
 
-.form-group label {
+.form-group > label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
 }
 
 .form-select label {
-  display: inline-flex;
+  display: flex;
   align-items: left;
   margin-bottom: 8px;
   font-weight: normal;
-  margin-right: 2em;
+}
+
+.form-select input[type="radio"] {
+  margin-right: 0.5em;
 }
 
 .form-group input,
