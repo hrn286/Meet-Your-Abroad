@@ -3,7 +3,8 @@
   text-align: center;
 }
 
-.form-lead{
-  margin-top: 5px;
-  margin-bottom: 5px;
+.form-lead {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
 }
