@@ -22,8 +22,8 @@
 
 .form-select label {
   display: inline-flex;
-  align-items: center;
-  margin-right: 1em;
+  align-items: left;
+  max-width: 600px;
   margin-bottom: 8px;
   font-weight: normal;
 }
