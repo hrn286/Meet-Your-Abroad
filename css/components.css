@@ -157,6 +157,11 @@
   color: #333;
 }
 
+.toc-topic{
+  text-align: left; 
+}  
+  
+
 .policy-toc ul {
   list-style: none;
   padding: 0;
