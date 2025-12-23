@@ -1,10 +1,9 @@
 .about-main {
   max-width: 900px;
-  margin-top: 20px;
   margin: 20px 120px 20px 120px;
 }
 
 .about-lead{
-  margin-top: 5px;
-  margin-bottom: 5px;
+  max-width: 900px;
+  margin: 20px 120px 20px 120px;
 }
