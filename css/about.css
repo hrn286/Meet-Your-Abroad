@@ -5,6 +5,6 @@
 
 .about-lead{
   max-width: 900px;
-  margin: 80px auto 120px;  /* ← 左右を自動で同じにする */
+  margin: 20px 120px 20px 120px;  /* ← 左右を自動で同じにする */
   text-align: center;   
 }
