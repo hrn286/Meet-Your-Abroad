@@ -7,7 +7,6 @@ form.addEventListener("submit", async (e) => {
   status.textContent = "送信中...";
 
   const formData = {
-    name: form.name.value,
     email: form.email.value,
     message: form.message.value,
   };
