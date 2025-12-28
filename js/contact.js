@@ -1,35 +1,35 @@
 const form = document.getElementById("contact-form");
-const status = document.getElementById("form-status");
+const statusEl = document.getElementById("form-status");
+const submitBtn = document.getElementById("submit");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  status.textContent = "送信中...";
-
-  const formData = {
-    email: form.email.value,
-    message: form.message.value,
-  };
+  statusEl.textContent = "送信中...";
+  submitBtn.disabled = true;
 
   try {
-    const res = await fetch("/api/contact", {
+    const formData = new FormData(form);
+
+    const res = await fetch(form.action, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
+      body: formData,
+      headers: { "Accept": "application/json" }
     });
 
-    const result = await res.json();
+    const data = await res.json().catch(() => null);
 
     if (!res.ok) {
-      throw new Error(result.message || "送信に失敗しました");
+      // Web3Formsのエラー文が取れればそれを表示
+      const msg = data?.message || "送信に失敗しました。時間を置いて再度お試しください。";
+      throw new Error(msg);
     }
 
-    status.textContent = "お問い合わせありがとうございます！";
+    statusEl.textContent = "送信できました！お問い合わせありがとうございます。";
     form.reset();
-
-  } catch (error) {
-    status.textContent = error.message;
+  } catch (err) {
+    statusEl.textContent = err.message || "送信に失敗しました。";
+  } finally {
+    submitBtn.disabled = false;
   }
 });
