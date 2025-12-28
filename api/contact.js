@@ -3,10 +3,10 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  const { name, email, message } = req.body;
+  const { email, message } = req.body;
 
   // 最低限のバリデーション
-  if (!name || !email || !message) {
+  if (!email || !message) {
     return res.status(400).json({
       message: "入力内容に不備があります",
     });
@@ -14,7 +14,6 @@ export default async function handler(req, res) {
 
   // ここで「ちゃんと届いてる」
   console.log("📩 CONTACT FORM");
-  console.log("Name:", name);
   console.log("Email:", email);
   console.log("Message:", message);
 
