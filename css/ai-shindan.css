@@ -9,11 +9,9 @@
 } 
 
 .chat-area { 
+  display: none; 
   max-width: 600px; 
   margin: 40px auto; 
-  display: flex;
-  flex-direction: column;
-  height: 70vh;
 } 
 
 .chat-input { 
@@ -69,7 +67,7 @@
 }  
 
 #chat-box { 
-  flex: 1;  
+  max-height: 360px; /* ← 好きな高さ */ 
   overflow-y: auto; /* ← これ重要 */ 
   scroll-behavior: smooth; 
 } 
