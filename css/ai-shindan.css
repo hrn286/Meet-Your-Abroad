@@ -12,6 +12,8 @@
   display: none; 
   max-width: 600px; 
   margin: 40px auto; 
+  position: sticky;
+  bottom: 40vh;
 } 
 
 .chat-input { 
