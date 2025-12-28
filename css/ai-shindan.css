@@ -11,7 +11,7 @@
 .chat-area {
   display: none;
   max-width: 600px;
-  margin: 0;
+  margin: 40px auto;
   height: 70vh;                /* ← 高さを固定 */
   flex-direction: column;
 }
@@ -20,11 +20,10 @@
   display: flex;
   gap: 8px;
   margin-top: 10px;
-  margin-botton: 
+  margin-botton: 50px;
   position: sticky;
   bottom: 0;
-  background: #fff;            /* ← 背景必須 */
-  padding: 10px 0;
+  padding: 0;
   border-top: 1px solid #eee;
 }
 
