@@ -1,3 +1,12 @@
+// NOTE:
+// 現在お問い合わせフォームは Web3Forms を使用しています。
+// このAPIは未使用です。
+
+export default function handler(req, res) {
+  return res.status(404).json({ message: "Not used" });
+}
+
+
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY_CONTACT);
