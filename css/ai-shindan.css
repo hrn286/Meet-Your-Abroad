@@ -23,6 +23,9 @@
   
 } 
 
+.chat-input input { 
+  flex: 1; 
+} 
 
 #start-btn { 
   height: 56px; /* 入力欄と揃える */ 
