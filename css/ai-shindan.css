@@ -18,9 +18,6 @@
   display: flex; 
   gap: 8px; 
   margin-top: 10px; 
-  position: sticky;
-  bottom: 40vh;
-  
 } 
 
 .chat-input input { 
@@ -70,11 +67,9 @@
 }  
 
 #chat-box { 
-  max-height: 70vh; /* ← 好きな高さ */ 
+  max-height: 360px; /* ← 好きな高さ */ 
   overflow-y: auto; /* ← これ重要 */ 
   scroll-behavior: smooth; 
-  position: sticky;
-  bottom: 50vh;
 } 
 
 @media (max-width: 600px) {
