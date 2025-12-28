@@ -1,121 +1,112 @@
-.ai-main {
-  margin-top: 20px;
-  text-align: center;
-}
+.ai-main { 
+  margin-top: 20px; 
+  text-align: center; 
+} 
 
-.ai-lead{
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+.ai-lead{ 
+  margin-top: 5px; 
+  margin-bottom: 5px; 
+} 
 
-.chat-area {
-  display: none;
-  max-width: 600px;
-  margin: 40px auto;
-  height: 70vh;                /* ← 高さを固定 */
-  flex-direction: column;
-}
+.chat-area { 
+  display: none; 
+  max-width: 600px; 
+  margin: 40px auto; 
+} 
 
-.chat-input {
-  display: flex;
-  gap: 8px;
-  margin-top: 10px;
-  margin-botton: 50px;
-  position: sticky;
-  bottom: 0;
-  padding: 0;
-  border-top: 1px solid #eee;
-}
+.chat-input { 
+  display: flex; 
+  gap: 8px; 
+  margin-top: 10px; 
+} 
 
-.chat-input input {
-  flex: 1;
-}
-
-#start-btn {
-  height: 56px;          /* 入力欄と揃える */
-  padding: 0 24px;      /* 横に大きく */
-  border-radius: 10px;
-  background: #FFB84D;  /* ロゴ寄りオレンジ */
-  border: 1px solid #ccc;
-  cursor: pointer;
-  margin: 20px auto;
-}
-
-
-#user-input {
-  height: 56px;        /* ← 高さを大きく */
-  padding: 0 16px;    /* 横に余白 */
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
-
-#send-btn {
-  height: 56px;          /* 入力欄と揃える */
-  padding: 0 24px;      /* 横に大きく */
-  border-radius: 10px;
-  background: #FFB84D;  /* ロゴ寄りオレンジ */
-  border: 1px solid #ccc;
-  cursor: pointer;
-}
-
-#start-btn:hover {
-  background: #FFA726;
-}
-
-#send-btn:hover {
-  background: #FFA726;
-}
-
-#chat-area {
-  gap: 12px;
-}
-
-#send-btn:hover {
-  background: #FFA726;
-  
-#chat-box {
+.chat-input input { 
   flex: 1; 
-  padding: 12px;
-  overflow-y: auto;        /* ← これ重要 */
-  scroll-behavior: smooth;
-}
+} 
+
+#start-btn { 
+  height: 56px; /* 入力欄と揃える */ 
+  padding: 0 24px; /* 横に大きく */ 
+  border-radius: 10px; 
+  background: #FFB84D; /* ロゴ寄りオレンジ */ 
+  border: 1px solid #ccc; 
+  cursor: pointer; 
+  margin: 20px auto; 
+} 
+
+#user-input { 
+  height: 56px; /* ← 高さを大きく */ 
+  padding: 0 16px; /* 横に余白 */ 
+  border-radius: 10px; 
+  border: 1px solid #ccc; 
+} 
+
+#send-btn { 
+  height: 56px; /* 入力欄と揃える */ 
+  padding: 0 24px; /* 横に大きく */ 
+  border-radius: 10px; 
+  background: #FFB84D; /* ロゴ寄りオレンジ */ 
+  border: 1px solid #ccc; 
+  cursor: pointer; 
+} 
+
+#start-btn:hover { 
+  background: #FFA726; 
+} 
+
+#send-btn:hover { 
+  background: #FFA726;
+} 
+
+#chat-area { 
+  gap: 12px; 
+} 
+
+#send-btn:hover { 
+  background: #FFA726; 
+}  
+
+#chat-box { 
+  max-height: 360px; /* ← 好きな高さ */ 
+  overflow-y: auto; /* ← これ重要 */ 
+  scroll-behavior: smooth; 
+} 
 
 @media (max-width: 600px) {
-  #user-input,
-  #send-btn {
-    height: 60px;
-  }
+  #user-input, #send-btn {
+    height: 60px; 
+  } 
 }
 
-@media (max-width: 600px) {
-  #chat-box {
-    max-height: 50vh;
-  }
-}
+@media (max-width: 600px) { 
+  #chat-box { 
+    max-height: 50vh; 
+  } 
+} 
 
 .loading {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: inline-flex; 
+  align-items: center; 
+  gap: 8px; 
 }
 
-/* くるくる本体 */
+/* くるくる本体 */ 
 .loading-spinner {
-  width: 16px;
-  height: 16px;
-  border: 2px solid #66CFF2;
-  border-top-color: transparent;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
+  width: 16px; 
+  height: 16px; 
+  border: 2px solid #66CFF2; 
+  border-top-color: transparent; 
+  border-radius: 50%; 
+  animation: spin 1s linear infinite; 
+} 
 
 /* 回転アニメーション */
 @keyframes spin {
   from {
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); 
+  } 
   to {
-    transform: rotate(360deg);
-  }
+    transform: rotate(360deg); 
+  } 
 }
 
