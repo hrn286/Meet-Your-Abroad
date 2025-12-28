@@ -1,18 +1,6 @@
-import com.resend.*;
+import { Resend } from "resend";
 
-public class Main {
-    public static void main(String[] args) {
-        Resend resend = new Resend("re_4vEGsXfo_54x7MtihphGdSQ4hRp1QD5z1");
-
-        SendEmailRequest sendEmailRequest = SendEmailRequest.builder()
-                .from("onboarding@resend.dev")
-                .to("meetyourabroad@gmail.com")
-                .subject("お問い合わせ")
-                .build();
-
-        SendEmailResponse data = resend.emails().send(sendEmailRequest);
-    }
-}
+const resend = new Resend(process.env.RESEND_API_KEY_CONTACT);
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -21,19 +9,32 @@ export default async function handler(req, res) {
 
   const { email, message } = req.body;
 
-  // 最低限のバリデーション
   if (!email || !message) {
     return res.status(400).json({
       message: "入力内容に不備があります",
     });
   }
 
-  // ここで「ちゃんと届いてる」
-  console.log("📩 CONTACT FORM");
-  console.log("Email:", email);
-  console.log("Message:", message);
+  try {
+    await resend.emails.send({
+      from: "Meet Your Abroad <onboarding@resend.dev>",
+      to: "meetyourabroad@gmail.com",
+      reply_to: email,
+      subject: "【CONTACT】お問い合わせが届きました",
+      text:
+        `送信者メール: ${email}\n\n` +
+        `---\n${message}`,
+    });
 
-  return res.status(200).json({
-    message: "送信成功",
-  });
+    return res.status(200).json({
+      message: "送信成功",
+    });
+
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      message: "メール送信に失敗しました",
+    });
+  }
 }
+
