@@ -12,8 +12,6 @@
   display: none; 
   max-width: 600px; 
   margin: 40px auto; 
-  position: sticky;
-  bottom: 40vh;
 } 
 
 .chat-input { 
@@ -21,13 +19,10 @@
   gap: 8px; 
   margin-top: 10px; 
   position: sticky;
-  bottom: 0;
+  bottom: 40vh;
   
 } 
 
-.chat-input input { 
-  flex: 1; 
-} 
 
 #start-btn { 
   height: 56px; /* 入力欄と揃える */ 
@@ -76,7 +71,7 @@
   overflow-y: auto; /* ← これ重要 */ 
   scroll-behavior: smooth; 
   position: sticky;
-  bottom: 30%;
+  bottom: 50vh;
 } 
 
 @media (max-width: 600px) {
