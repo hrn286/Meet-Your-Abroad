@@ -12,12 +12,20 @@
   display: none;
   max-width: 600px;
   margin: 40px auto;
+  height: 70vh;                /* ← 高さを固定 */
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-input {
   display: flex;
   gap: 8px;
   margin-top: 10px;
+  position: sticky;
+  bottom: 0;
+  background: #fff;            /* ← 背景必須 */
+  padding: 10px 0;
+  border-top: 1px solid #eee;
 }
 
 .chat-input input {
@@ -67,7 +75,8 @@
   background: #FFA726;
   
 #chat-box {
-  max-height: 360px;       /* ← 好きな高さ */
+  flex: 1; 
+  padding: 12px;
   overflow-y: auto;        /* ← これ重要 */
   scroll-behavior: smooth;
 }
