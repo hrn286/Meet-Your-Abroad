@@ -81,7 +81,10 @@ function addMessage(sender, message, isFinal = false) {
   }
 
   chatBox.appendChild(wrapper);
-  chatBox.scrollTop = chatBox.scrollHeight;
+  setTimeout(() => {
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }, 0);
+
 }
 
 
