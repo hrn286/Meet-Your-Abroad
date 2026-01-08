@@ -123,6 +123,8 @@
   background: #333;
   color: #fff;
   font-size: 14px;
+  position: fixed;
+  bottom: 0;    
 }
 
 .footer-left {
