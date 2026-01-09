@@ -14,7 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px auto;
+  margin-top: 10px;
+  margin-bottom:30px;
+  margin-right:auto;
+  margin-left:auto;
   font-size: 20px;
   font-weight: bold;
   background-color: #f7f7f7;
@@ -23,7 +26,10 @@
 
 .all-article{
   width: 1100px;
-  margin: 10px auto;
+  margin-top: 10px;
+  margin-bottom:50px;
+  margin-right:auto;
+  margin-left:auto;
   overflow-x: auto;
   display: flex;
   flex-wrap: nowrap;
@@ -82,8 +88,8 @@
 .world-map {
   position: relative;
   width: 60%;
-  max-width: 1200px; /* 任意：地図の最大幅 */
-  margin: 0 auto;
+  max-width: 1200px; 
+  margin: 20px auto;
 }
 
 .world-map img {
