@@ -78,3 +78,79 @@
   font-size: 16px;
   line-height: 1.4;
 }
+
+.world-map {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* 任意：地図の最大幅 */
+  margin: 0 auto;
+}
+
+.world-map img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-button {
+  position: absolute;
+  padding: 12px 26px;
+  background-color: #ffb84d;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overlay-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 rgba(0,0,0,0.25);
+}
+
+/* アフリカ */
+.overlay-button[href*="africa"] {
+  top: 55%;
+  left: 52%;
+}
+
+/* アジア */
+.overlay-button[href*="asia"] {
+  top: 38%;
+  left: 68%;
+}
+
+/* ヨーロッパ */
+.overlay-button[href*="europe"] {
+  top: 28%;
+  left: 52%;
+}
+
+/* 北米 */
+.overlay-button[href*="northamerica"] {
+  top: 30%;
+  left: 20%;
+}
+
+/* 中南米 */
+.overlay-button[href*="southamerica"] {
+  top: 55%;
+  left: 28%;
+}
+
+/* オセアニア */
+.overlay-button[href*="oceania"] {
+  top: 65%;
+  left: 78%;
+}
+
+.overlay-button {
+  transform: translate(-50%, -50%);
+}
+
+.overlay-button:hover {
+  transform: translate(-50%, -52%);
+}
+
