@@ -81,7 +81,7 @@
 
 .world-map {
   position: relative;
-  width: 80%;
+  width: 60%;
   max-width: 1200px; /* 任意：地図の最大幅 */
   margin: 0 auto;
 }
