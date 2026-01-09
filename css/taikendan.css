@@ -89,6 +89,7 @@
 .world-map img {
   width: 100%;
   display: block;
+  border-radius: 20px;
 }
 
 .overlay-button {
