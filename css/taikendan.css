@@ -136,14 +136,14 @@
 
 /* 中南米 */
 .overlay-button[href*="southamerica"] {
-  top: 55%;
+  top: 60%;
   left: 28%;
 }
 
 /* オセアニア */
 .overlay-button[href*="oceania"] {
-  top: 65%;
-  left: 80%;
+  top: 70%;
+  left: 85%;
 }
 
 .overlay-button {
