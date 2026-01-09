@@ -119,7 +119,7 @@
 /* アジア */
 .overlay-button[href*="asia"] {
   top: 38%;
-  left: 68%;
+  left: 78%;
 }
 
 /* ヨーロッパ */
@@ -143,7 +143,7 @@
 /* オセアニア */
 .overlay-button[href*="oceania"] {
   top: 65%;
-  left: 78%;
+  left: 80%;
 }
 
 .overlay-button {
