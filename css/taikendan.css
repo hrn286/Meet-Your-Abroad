@@ -9,5 +9,9 @@
 }
 
 .taikendan-title{
-  font-size: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
 }
