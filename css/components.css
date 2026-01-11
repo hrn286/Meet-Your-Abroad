@@ -203,7 +203,6 @@
 }
 
 .sns-links a {
-  display: inline-block;
   text-decoration: none;
   font-size: 0;
 }
@@ -216,6 +215,7 @@
 .sns-row {
   display: flex;
   align-items: center; 
+  justify-content: center;
   gap: 16px; 
   margin: 10px auto;
 }
