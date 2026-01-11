@@ -45,8 +45,12 @@
 
 .home-lead{
   width: 40%;
-  margin: 10px auto;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
   font-weight:500;
+  
 }
 
 .home-reasons{
