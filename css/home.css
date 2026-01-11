@@ -43,6 +43,10 @@
   color: #01B4ED;
 }
 
-.home-reasons li {
-  display: list-item;
+.home-lead{
+  width: 20%;
+}
+
+.home-reasons{
+  padding-left:0;
 }
