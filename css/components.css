@@ -216,7 +216,7 @@
   display: flex;
   align-items: center; 
   justify-content: center;
-  gap: 16px; 
+  gap: 14px; 
   margin: 20px auto;
   font-size: 14px;
 }
