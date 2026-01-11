@@ -8,3 +8,7 @@
   margin: 20px auto;  /* ← 左右を自動で同じにする */
   text-align: center;   
 }
+
+.intro {
+  padding: 60px 20px;
+}
