@@ -4,7 +4,7 @@
 }
 
 .about-lead{
-  max-width: 900px;
+  max-width: 500px;
   margin: 20px auto;  /* ← 左右を自動で同じにする */
   text-align: center;   
 }
