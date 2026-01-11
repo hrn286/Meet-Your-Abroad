@@ -12,10 +12,10 @@
 }
 
 .hero-copy {
-  font-size: 20px;
-  font-weight: 550;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 /* =====================
@@ -45,12 +45,16 @@
 
 .home-lead{
   width: 40%;
-  margin: 5px auto;
+  margin: 10px auto;
+  font-weight:200;
 }
 
 .home-reasons{
   text-align:left;
   padding-left: 15%;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  background-color:#E2F3FA;
+  border-radius: 40px;
 }
