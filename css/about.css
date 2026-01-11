@@ -8,3 +8,11 @@
   margin: 20px auto;  /* ← 左右を自動で同じにする */
   text-align: center;   
 }
+
+.separator-hor{
+  display: inline-block;
+  width: 200px;     /* 長さ */
+  height: 1px;      /* 太さ */
+  background: #000;
+  vertical-align: middle;
+}
