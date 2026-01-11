@@ -192,6 +192,7 @@
 /*SNS*/
 .sns-links{
   margin-top: 80px;
+  display: block;
 }
 .sns-title{
   font-size: 30px;
