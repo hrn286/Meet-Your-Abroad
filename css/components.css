@@ -190,6 +190,9 @@
 }
 
 /*SNS*/
+.sns-links{
+  margin-top: 50px;
+}
 .sns-title{
   font-size: 30px;
   font-weight: 600;
