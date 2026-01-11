@@ -194,6 +194,7 @@
   margin-top: 80px;
   display: block;
 }
+
 .sns-title{
   font-size: 30px;
   font-weight: 600;
@@ -201,13 +202,13 @@
   margin-bottom: 5px;
 }
 
-.sns-logo {
+.sns-lead a {
   display: inline-block;
   text-decoration: none;
   font-size: 0;
 }
 
-.sns-logo img{
+.sns-logo{
   width: 30px;
   height: auto;
   margin: 5px;
