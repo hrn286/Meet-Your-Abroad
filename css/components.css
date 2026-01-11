@@ -200,7 +200,6 @@
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 5px;
-  display: inline-block;
 }
 
 .sns-links a {
@@ -212,5 +211,10 @@
 .sns-logo{
   width: 30px;
   height: auto;
-  margin: 5px;
+}
+
+.sns-row {
+  display: flex;
+  align-items: center; 
+  gap: 16px;           
 }
