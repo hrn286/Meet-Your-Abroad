@@ -42,10 +42,3 @@
   color: #01B4ED;
 }
 
-.separator-hor{
-  display: inline-block;
-  width: 200px;     /* 長さ */
-  height: 1px;      /* 太さ */
-  background: #000;
-  vertical-align: middle;
-}
