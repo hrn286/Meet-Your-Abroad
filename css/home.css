@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  padding: 10px 20px 80px;
+  padding: 20px 20px 80px;
 }
 
 .feature {
@@ -68,4 +68,6 @@
 
 .features-title{
   margin-top:50px;
+  font-size: 30px;
+  font-weight: 600; 
 }
