@@ -8,6 +8,10 @@
   margin-bottom: 5px; 
 } 
 
+.ai-lead-one{
+  margin-bottom:5px;
+}
+
 .chat-area { 
   display: none; 
   max-width: 600px; 
