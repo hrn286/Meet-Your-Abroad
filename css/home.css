@@ -3,6 +3,7 @@
 ===================== */
 .hero {
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .hero-logo {
@@ -48,7 +49,7 @@
   margin-top: 10px;
   margin-left:auto;
   margin-right:auto;
-  margin-top:50px;
+  margin-bottom:50px;
   font-weight:500;
   
 }
