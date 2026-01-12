@@ -25,7 +25,7 @@
   gap: 8px; 
   margin-top: 10px; 
   position: sticky;
-  bottom:0;
+  bottom:40%;
 } 
 
 .chat-input input { 
