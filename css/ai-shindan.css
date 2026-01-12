@@ -16,6 +16,8 @@
   display: none; 
   max-width: 600px; 
   margin: 40px auto; 
+  flex-direction: column;
+  gap: 12px;
 } 
 
 .chat-input { 
