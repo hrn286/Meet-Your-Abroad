@@ -18,10 +18,16 @@ const questions = [
  ];
 
 startBtn.addEventListener("click", () => {
-  chatArea.style.display = "block";
+  chatArea.style.display = "flex";   // ← blockじゃなくてflex！
   startBtn.style.display = "none";
   addMessage("AI", questions[currentQuestion]);
+  
+  setTimeout(() => {
+    input.scrollIntoView({ behavior: "smooth", block: "center" });
+    input.focus();
+  }, 50);
 });
+
 
 sendBtn.addEventListener("click", sendMessage);
 
